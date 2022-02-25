@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: darkgrey;
+    padding: 4rem;
+}
+.title {
+    font-size: 3rem;
+    color: blanchedalmond;
+}
+.content {
+    background-color: honeydew;
+    height: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sub-heading{
+    padding-bottom: 3rem;
+    width: 100%;
+}
+.content a {
+    display: block;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem;
+    width: 200px;
+}
+.content a:hover {
+    background-color: azure;
+    box-shadow: 2px 2px #000;
+}

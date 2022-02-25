@@ -1,0 +1,36 @@
+// this is an external file for perticularly header only
+
+
+// function
+@mixin flexCenter($direction) {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+header {
+    background-color: $paramaryBackColor;
+    color: $paramaryTextColor;
+    @include flexCenter(column); // calling function
+    a {
+        display: block;
+        background-color: $buttonBackColor;
+        color: $buttonTextColor;
+        text-decoration: none;
+        width: 100px;
+        height: 100px;
+        &:hover {
+            background-color: bisque;
+        }
+        &::after {
+            content: "_";
+        }
+        &::before {
+            content: "_";
+        }
+
+
+    }
+}

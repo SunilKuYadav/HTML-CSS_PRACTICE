@@ -1,0 +1,78 @@
+header {
+  background-color: #d5a9a9;
+  color: #174f17;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header a {
+  display: block;
+  background-color: #442626;
+  color: #40ee40;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+}
+
+header a:hover {
+  background-color: bisque;
+}
+
+header a::after {
+  content: "_";
+}
+
+header a::before {
+  content: "_";
+}
+
+a {
+  display: block;
+  background-color: #442626;
+  color: #40ee40;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+}
+
+a:hover {
+  background-color: bisque;
+}
+
+a::after {
+  content: "_";
+}
+
+a::before {
+  content: "_";
+}
+
+.contect {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=style.css.map */

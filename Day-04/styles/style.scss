@@ -1,0 +1,28 @@
+// importing files
+@import './variable';
+
+@import './header';
+
+
+a {
+    display: block;
+    background-color: $buttonBackColor;
+    color: $buttonTextColor;
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    &:hover {
+        background-color: bisque;
+    }
+    &::after {
+        content: "_";
+    }
+    &::before {
+        content: "_";
+    }
+
+}
+
+.contect {
+    @include flexCenter(row);
+}

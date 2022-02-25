@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>HTML5 Assignment</title>
+    <meta name="author" content="Sunil Kumar Yadav" />
+    <meta name="keywords" content="HTML5, CSS3" />
+    <meta
+      name="description"
+      content="This is an html5 assignmet page have html5 tags and approch"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="#meta">Meta</a>
+      <a href="#tag">Tag</a>
+      <a href="#cssVar">CSS Variable</a>
+      <a href="#boxSize">Box Moble</a>
+      <a href="#footer">Footer</a>
+    </nav>
+    <section class="switchTheme">
+        <input onclick="switchTheme(this)" type="checkbox" id="switch" /><label for="switch">Toggle</label>
+    </section>
+    <article id="meta" class="metaTags">
+      <header>
+        <h1>Meta Tags in HTML</h1>
+        <p>Intro to meta tags</p>
+      </header>
+      <p>
+        <code>&#60;meta&#62;</code> tags always go inside the
+        <code>&#60;head&#62;</code> element, and are typically used to specify
+        character set, page description, keywords, author of the document, and
+        viewport settings
+      </p>
+      <ol>
+        <li>
+          charset
+          <ul>
+            <li>Specifies the character encoding for the HTML document</li>
+            <li>Value</li>
+            <ol>
+              <li>character_set</li>
+            </ol>
+          </ul>
+        </li>
+        <li>
+          content
+          <ul>
+            <li>
+              Specifies the value associated with the http-equiv or name
+              attribute
+            </li>
+            <li>Value</li>
+            <ol>
+              <li>text</li>
+            </ol>
+          </ul>
+        </li>
+        <li>
+          http-equiv
+          <ul>
+            <li>
+              Provides an HTTP header for the information/value of the content
+              attribute
+            </li>
+            <li>Value</li>
+            <ol>
+              <li>content-security-policy</li>
+              <li>content-type</li>
+              <li>default-style</li>
+              <li>refresh</li>
+            </ol>
+          </ul>
+        </li>
+        <li>
+          name
+          <ul>
+            <li>Specifies a name for the metadata</li>
+            <li>Value</li>
+            <ol>
+              <li>application-name</li>
+              <li>author</li>
+              <li>description</li>
+              <li>generator</li>
+              <li>keywords</li>
+              <li>viewport</li>
+            </ol>
+          </ul>
+        </li>
+      </ol>
+    </article>
+    <article id="tag" class="tags">
+      <header>
+        <h1>Tags in HTML5</h1>
+        <table class="table table-bordered">
+          <tr>
+            <th>Tags (Elements)</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>&lt;article&gt;</td>
+            <td>
+              Represents an independent piece of content of a document, such as
+              a blog entry or newspaper article
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;aside &gt;</td>
+            <td>
+              Represents a piece of content that is only slightly related to the
+              rest of the page.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;audio&gt;</td>
+            <td>Defines an audio file.</td>
+          </tr>
+          <tr>
+            <td>&lt;canvas&gt;</td>
+            <td>
+              This is used for rendering dynamic bitmap graphics on the fly,
+              such as graphs or games.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;command&gt;</td>
+            <td>Represents a command the user can invoke.</td>
+          </tr>
+          <tr>
+            <td>&lt;datalist&gt;</td>
+            <td>
+              Together with the a new list attribute for input can be used to
+              make comboboxes
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;details&gt;</td>
+            <td>
+              Represents additional information or controls which the user can
+              obtain on demand
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;embed&gt;</td>
+            <td>Defines external interactive content or plugin.</td>
+          </tr>
+          <tr>
+            <td>&lt;figure&gt;</td>
+            <td>
+              Represents a piece of self-contained flow content, typically
+              referenced as a single unit from the main flow of the document.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;footer&gt;</td>
+            <td>
+              Represents a footer for a section and can contain information
+              about the author, copyright information, et cetera.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;header&gt;</td>
+            <td>Represents a group of introductory or navigational aids.</td>
+          </tr>
+          <tr>
+            <td>&lt;hgroup&gt;</td>
+            <td>Represents the header of a section.</td>
+          </tr>
+          <tr>
+            <td>&lt;keygen&gt;</td>
+            <td>Represents control for key pair generation.</td>
+          </tr>
+          <tr>
+            <td>&lt;mark&gt;</td>
+            <td>
+              Represents a run of text in one document marked or highlighted for
+              reference purposes, due to its relevance in another context.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;meter&gt;</td>
+            <td>Represents a measurement, such as disk usage.</td>
+          </tr>
+          <tr>
+            <td>&lt;nav&gt;</td>
+            <td>
+              Represents a section of the document intended for navigation.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;output&gt;</td>
+            <td>
+              Represents some type of output, such as from a calculation done
+              through scripting.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;progress&gt;</td>
+            <td>
+              Represents a completion of a task, such as downloading or when
+              performing a series of expensive operations.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;ruby&gt;</td>
+            <td>
+              Together with &lt;rt&gt; and &lt;rp&gt; allow for marking up ruby
+              annotations.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;section&gt;</td>
+            <td>Represents a generic document or application section</td>
+          </tr>
+          <tr>
+            <td>&lt;time&gt;</td>
+            <td>Represents a date and/or time.</td>
+          </tr>
+          <tr>
+            <td>&lt;video&gt;</td>
+            <td>Defines a video file.</td>
+          </tr>
+          <tr>
+            <td>&lt;wbr&gt;</td>
+            <td>Represents a line break opportunity.</td>
+          </tr>
+        </table>
+        <h2>New types for &lt;input&gt; tag</h2>
+        <table class="table table-bordered">
+          <tr>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>
+              Color selector, which could be represented by a wheel or swatch
+              picker
+            </td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>Selector for calendar date</td>
+          </tr>
+          <tr>
+            <td>datetime-local</td>
+            <td>
+              Date and time display, with no setting or indication for time
+              zones
+            </td>
+          </tr>
+          <tr>
+            <td>datetime</td>
+            <td>Full date and time display, including a time zone.</td>
+          </tr>
+          <tr>
+            <td>email</td>
+            <td>Input type should be an email.</td>
+          </tr>
+          <tr>
+            <td>month</td>
+            <td>Selector for a month within a given year</td>
+          </tr>
+          <tr>
+            <td>number</td>
+            <td>A field containing a numeric value only</td>
+          </tr>
+          <tr>
+            <td>range</td>
+            <td>
+              Numeric selector within a range of values, typically visualized as
+              a slider
+            </td>
+          </tr>
+          <tr>
+            <td>search</td>
+            <td>
+              Term to supply to a search engine. For example, the search bar
+              atop a browser.
+            </td>
+          </tr>
+          <tr>
+            <td>tel</td>
+            <td>Input type should be telephone number.</td>
+          </tr>
+          <tr>
+            <td>time</td>
+            <td>Time indicator and selector, with no time zone information</td>
+          </tr>
+          <tr>
+            <td>url</td>
+            <td>Input type should be URL type.</td>
+          </tr>
+          <tr>
+            <td>week</td>
+            <td>Selector for a week within a given year</td>
+          </tr>
+        </table>
+      </header>
+    </article>
+    <article id="cssVar" class="cssVar">
+        <header>
+            <h1>CSS Variable</h1>
+        </header>
+        <ul>
+            <li>First of all: CSS variables can have a global or local scope.</li>
+            <li> Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.</li>
+            <li>To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.</li>
+            <li> To create a variable with local scope, declare it inside the selector that is going to use it.</li>
+            <li>The following example is equal to the example above, but here we use the var() function. </li>
+            <li> First, we declare two global variables (--blue and --white). Then, we use the var() function to insert the value of the variables later in the style sheet:</li>
+        </ul>
+    </article>
+    <section id="boxSize" class="boxModle">
+        <div class="box">
+            <code>width = border + padding + content</code>
+            <br>
+            width <code>10+10+360+10+10 = 400 </code> 
+        </div>
+    </section>
+    <footer id="footer">
+        <div>
+            <header>
+                <p>Thank You!</p>
+            </header>
+            <p>For more information stay updated</p>
+        </div>
+    </footer>
+  </body>
+</html>

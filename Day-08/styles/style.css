@@ -1,0 +1,232 @@
+div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.animation1 {
+  background-color: bisque;
+  -webkit-animation-name: animation1;
+          animation-name: animation1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes animation1 {
+  from {
+    background-color: bisque;
+  }
+  to {
+    background-color: chartreuse;
+  }
+}
+
+@keyframes animation1 {
+  from {
+    background-color: bisque;
+  }
+  to {
+    background-color: chartreuse;
+  }
+}
+
+.animation2 {
+  background-color: chocolate;
+  -webkit-animation-name: animation2;
+          animation-name: animation2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes animation2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: darkblue;
+  }
+  50% {
+    background-color: darkcyan;
+  }
+  100% {
+    background-color: deeppink;
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: darkblue;
+  }
+  50% {
+    background-color: darkcyan;
+  }
+  100% {
+    background-color: deeppink;
+  }
+}
+
+.animation3 {
+  position: relative;
+  background-color: chocolate;
+  -webkit-animation-name: animation3;
+          animation-name: animation3;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animation3 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: darkblue;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: darkcyan;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: pink;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: deeppink;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes animation3 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: darkblue;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: darkcyan;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: pink;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: deeppink;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.animation4 {
+  position: relative;
+  background-color: chocolate;
+  -webkit-animation-name: animation4;
+          animation-name: animation4;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes animation4 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  25% {
+    background-color: darkblue;
+    left: 200px;
+    top: 0px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+  }
+  50% {
+    background-color: darkcyan;
+    left: 200px;
+    top: 200px;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  }
+  75% {
+    background-color: pink;
+    left: 0px;
+    top: 200px;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  100% {
+    background-color: deeppink;
+    left: 0px;
+    top: 0px;
+    -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+            clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  }
+}
+
+@keyframes animation4 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  25% {
+    background-color: darkblue;
+    left: 200px;
+    top: 0px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+  }
+  50% {
+    background-color: darkcyan;
+    left: 200px;
+    top: 200px;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  }
+  75% {
+    background-color: pink;
+    left: 0px;
+    top: 200px;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  100% {
+    background-color: deeppink;
+    left: 0px;
+    top: 0px;
+    -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+            clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

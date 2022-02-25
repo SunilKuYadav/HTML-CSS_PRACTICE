@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.btn {
+  background-color: #b58f8f;
+  color: #222;
+  font-size: 20px;
+  padding: .5em 1em;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  width: 310px;
+  height: 75px;
+}
+
+.btn-border-pop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: 8px solid #b58f8f;
+  -webkit-transition: top, left, right, bottom, 500ms ease-in-out;
+  transition: top, left, right, bottom, 500ms ease-in-out;
+}
+
+.btn-border-pop:hover::before, .btn-border-pop:focus::before {
+  top: -16px;
+  left: -16px;
+  right: -16px;
+  bottom: -16px;
+}
+
+.btn-background-slide {
+  z-index: 1;
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+
+.btn-background-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #2608ce;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.btn-background-slide:hover::before, .btn-background-slide:focus::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.btn-background-slide:hover, .btn-background-slide:focus {
+  color: #fff;
+}
+
+.btn-background-circle {
+  z-index: 1;
+  overflow: hidden;
+  background-color: #2608ce;
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+
+.btn-background-circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #b58f8f;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.btn-background-circle:hover::before, .btn-background-circle:focus::before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.btn-background-circle:hover, .btn-background-circle:focus {
+  color: white;
+}
+
+.btn-border-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  background-color: #2608ce;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.btn-border-underline:hover::before, .btn-border-underline:focus::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+/*# sourceMappingURL=style.css.map */

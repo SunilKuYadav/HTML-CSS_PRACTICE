@@ -1,0 +1,130 @@
+// variables 
+$backgroundColor : #b58f8f;
+$accentColor : rgb(38, 8, 206);
+$popupBorder : 8px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// container style
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+// general style for all btn
+.btn {
+    background-color: $backgroundColor;
+    color: #222;
+    font-size: 20px;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    width: 310px;
+    height: 75px;
+}
+// botton popup border style
+.btn-border-pop {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        border: $popupBorder solid $backgroundColor;
+        transition: top, left, right, bottom, 500ms ease-in-out;
+    }
+    &:hover::before,
+    &:focus::before {
+        top: $popupBorder * -2;
+        left: $popupBorder * -2;
+        right: $popupBorder * -2;
+        bottom: $popupBorder * -2;
+        
+    }
+}
+
+// botton background slide
+
+.btn-background-slide {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: $accentColor;
+        transition: transform 500ms ease-in-out;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    
+    &:hover::before,
+    &:focus::before {
+        transform: scaleX(1);
+    }
+    z-index: 1;
+    transition: color 500ms ease-in-out;
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+.btn-background-circle {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: $backgroundColor;
+        border-radius: 50%;
+        transition: transform 500ms ease-in-out;
+        transform: scale(1.5);
+    }
+    &:hover::before,
+    &:focus::before {
+        transform: scale(0);
+    }
+    
+    z-index: 1;
+    overflow: hidden;
+    background-color: $accentColor;
+    transition: color 500ms ease-in-out;
+    &:hover,
+    &:focus {
+        color: white;
+    }
+}
+
+.btn-border-underline {
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: $popupBorder;
+        background-color: $accentColor;
+        transition: transform 500ms ease-in-out;
+        transform: scaleX(0);
+    }
+    &:hover::before,
+    &:focus::before {
+        transform: scaleX(1);
+    }
+}

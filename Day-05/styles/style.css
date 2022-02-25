@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  scroll-snap-align: start;
+}
+
+.container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.one {
+  background-color: #F6A9A9;
+}
+
+.two {
+  background-color: #FFBF86;
+}
+
+.three {
+  background-color: #FFF47D;
+}
+
+.four {
+  background-color: #C2F784;
+}
+
+.five {
+  background-color: #7FC8A9;
+}
+/*# sourceMappingURL=style.css.map */
