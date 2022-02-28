@@ -12,6 +12,7 @@
     color: blanchedalmond;
 }
 .content {
+    display: flex;
     background-color: honeydew;
     height: 100%;
     padding: 4rem;
