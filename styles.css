@@ -7,6 +7,14 @@
     background-color: darkgrey;
     padding: 4rem;
 }
+.container h1 {
+    text-shadow: 5px 5px grey;
+    transition: all .5s;
+}
+.container h1:hover{
+    text-shadow: none;
+    transition: all .5s;
+}
 .title {
     font-size: 3rem;
     color: blanchedalmond;
@@ -15,10 +23,12 @@
     display: flex;
     background-color: honeydew;
     height: 100%;
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .sub-heading{
     padding-bottom: 3rem;
@@ -29,10 +39,26 @@
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0 0 1rem 0;
     width: 200px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 .content a:hover {
     background-color: azure;
     box-shadow: 2px 2px #000;
+}
+.card {
+    width: 400px;
+    height: 200px;
+    box-shadow: -2px 4px 28px -1px rgba(0,0,0,0.75);
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    transition: all .5s;
+}
+.card:hover {
+    box-shadow: none;
+    border: 1px solid black;
+    transition: all .5s;
 }
